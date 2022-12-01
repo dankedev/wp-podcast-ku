@@ -5,8 +5,8 @@
  * Plugin URI: https://dankedev.com/plugins/wp-portfolios-ku
  * Description: Manage and show up your podcast
  * Version: 1.0.0
- * Requires at least: 5.4
- * Requires PHP: 5.4
+ * Requires at least: 6.1
+ * Requires PHP: 8.1
  * Author: Hadie Danker
  * Author URI: https://www.dankedev.com
  * License: GPL v2 or later

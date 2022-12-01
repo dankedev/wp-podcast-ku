@@ -2,7 +2,7 @@
 Contributors: hadie danker,themedotid
 Tags: podcast, audio, player
 Requires at least: 6.1
-Tested up to: 6.1
+Tested up to: 6.1.1
 Stable tag: 1.0.0
 Requires PHP: 8.1
 License: GPLv2 or later
