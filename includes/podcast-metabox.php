@@ -14,7 +14,7 @@ function wp_podcast_ku_init_metabox()
 
 function wp_podcast_ku_create_meta_box($post)
 {
-    $title ='Podcast Episode Details';
+    $title = 'Podcast Episode Details';
     add_meta_box(
         sanitize_title($title),
         $title,
@@ -87,7 +87,7 @@ function wp_podcast_ku_create_meta_box_callback($post)
 
 
     $output .= '</div>';
-    echo  $output;
+    echo wp_kses_post($output);
 }
 
 
@@ -98,7 +98,11 @@ function wp_podcast_ku_save_meta_box($post_id)
         $is_valid_request = check_ajax_referer('wp_podcast_ku_metabox_action', 'wp_podcast_ku_metabox_token', false);
 
         if ($is_valid_request) {
-            $data = $_POST['wp_podcast_ku'];
+            /**
+             * try to sanitize with wp_unslash
+             */
+            $data = array_map('sanitize_text_field', $_POST['wp_podcast_ku']);
+
             $podcast_url = isset($data['podcast_url']) ? esc_url($data['podcast_url']) : null;
             $podcast_access = isset($data['podcast_access']) ? esc_attr($data['podcast_access']) : null;
 

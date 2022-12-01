@@ -1,17 +1,16 @@
 <?php
 
 /**
- * Plugin Name: 07. WP Podcast KU
+ * Plugin Name: WP Podcast KU - Podcast Keren
  * Plugin URI: https://dankedev.com/plugins/wp-portfolios-ku
- * Description: Increase user engagement with emoji reactions
+ * Description: Manage and show up your podcast
  * Version: 1.0.0
- * Requires at least: 6.0
- * Requires PHP: 8.0
+ * Requires at least: 5.4
+ * Requires PHP: 5.4
  * Author: Hadie Danker
  * Author URI: https://www.dankedev.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI: https://example.com/my-plugin/
  * Text Domain: wp-podcast
  * Domain Path:/languages
  */

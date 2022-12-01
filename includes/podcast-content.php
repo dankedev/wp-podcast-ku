@@ -83,7 +83,7 @@ function wp_podcast_ku_player($post_id = null)
 
     $output .= '</div>';
     $output .= '</div>';
-    return $output;
+    return wp_kses_post($output);
 }
 
 
@@ -96,7 +96,7 @@ function wp_podcast_ku_fake_player($post_id)
     ?>
     <div class="wp-podcast-fake-player">
         <div class="mejs-button"><button></button></div>
-        <div class="wp-podcast-fake-rails"><a href="<?php echo wp_login_url($redirect_url); ?>" class="player-link-login">Login untuk mendengar</a>
+        <div class="wp-podcast-fake-rails"><a href="<?php echo esc_url(wp_login_url($redirect_url)); ?>" class="player-link-login">Login untuk mendengar</a>
             <span class="podcast-fake-progress"></span>
         </div>
         <span class="fake-duration">10:00</span>
@@ -104,7 +104,7 @@ function wp_podcast_ku_fake_player($post_id)
     </div>
 <?php
         $output = ob_get_clean();
-    return $output;
+    return wp_kses_post($output);
 }
 
 
