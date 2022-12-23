@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WP Podcast KU - Podcast Keren
+ * Plugin Name: WP Podcast KU
  * Plugin URI: https://dankedev.com/plugins/wp-portfolios-ku
  * Description: Manage and show up your podcast
  * Version: 1.0.0

@@ -47,7 +47,7 @@ function wp_podcast_ku_create_meta_box_callback($post)
     $podcast_url = isset($data['podcast_url']) ? esc_url($data['podcast_url']) : null;
     $podcast_access = isset($data['podcast_access']) ? esc_attr($data['podcast_access']) : null;
 
-
+    // var_dump($podcast_url);
 
     wp_nonce_field('wp_podcast_ku_metabox_action', 'wp_podcast_ku_metabox_token');
 
@@ -71,11 +71,8 @@ function wp_podcast_ku_create_meta_box_callback($post)
 
     $output .= wp_sprintf(
         '<div class="wp-podcast-file-upload-input">
-        
         <input id="wp-podcast-file-upload-input" type="url" name="%1$s[podcast_url]" value="%2$s"/>
-        
         <button data-action="wp-podcast-upload-button" type="button" class="button button-secondary">Upload file</button>
-        
         </div>',
         $key_type,
         esc_url($podcast_url)
@@ -87,7 +84,29 @@ function wp_podcast_ku_create_meta_box_callback($post)
 
 
     $output .= '</div>';
-    echo wp_kses_post($output);
+
+    $allowed_html = array(
+        'input' => array(
+            'type'  => array(),
+            'id'    => array(),
+            'name'  => array(),
+            'value' => array(),
+        ),
+        'div' => array(
+            'class' => array(),
+            'id' => array(),
+        ),
+        'button' => array(
+            'data-action' => array(),
+            'type' => array(),
+            'class' => array(),
+        ),
+        'span' => array(),
+        'label' => array(),
+        'strong' => array(),
+        'audio' => array()
+    );
+    echo wp_kses($output, $allowed_html);
 }
 
 

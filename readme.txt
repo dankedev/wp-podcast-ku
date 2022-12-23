@@ -48,7 +48,8 @@ Untuk saat ini belum bisa
 
 
 == Changelog ==
-
+1. List podcast
+2. Tampilan Podcast
 
 == Upgrade Notice ==
 
