@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: WP Podcast KU
- * Plugin URI: https://dankedev.com/plugins/wp-portfolios-ku
+ * Plugin URI: https://wordpress.org/plugins/wp-podcast-ku
  * Description: Manage and show up your podcast
  * Version: 1.0.0
  * Requires at least: 6.1
