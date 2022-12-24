@@ -1,15 +1,15 @@
 # WP Podcast KU
 
-|                   |                                           |
-| ----------------- | ----------------------------------------- |
-| Contributors      | hadie danker,themedotid                   |
-| Tags              | podcast, audio, player                    |
-| Requires at least | 6.1                                       |
-| Tested up to      | 6.1.1                                     |
-| Stable tag        | 1.0.0                                     |
-| Requires PHP      | 8.1                                       |
-| License           | GPLv2 or later License                    |
-| URI               | https://www.gnu.org/licenses/gpl-2.0.html |
+|                   |                                                                                                                       |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Contributors      | [hadie danker](https://profiles.wordpress.org/hadie-danker/),[themedotid](https://profiles.wordpress.org/themedotid/) |
+| Tags              | podcast, audio, player                                                                                                |
+| Requires at least | 6.1                                                                                                                   |
+| Tested up to      | 6.1.1                                                                                                                 |
+| Stable tag        | 1.0.0                                                                                                                 |
+| Requires PHP      | 8.1                                                                                                                   |
+| License           | GPLv2 or later License                                                                                                |
+| URI               | https://www.gnu.org/licenses/gpl-2.0.html                                                                             |
 
 WP Podcast KU adalah plugin sederhana untuk membuat dan menampilkan
 podcast
@@ -31,8 +31,6 @@ menggunakan pihak ketiga.
 ## Installation
 
 This section describes how to install the plugin and get it working.
-
-e.g.
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-podcast-ku`
    directory, or install the plugin through the WordPress plugins
